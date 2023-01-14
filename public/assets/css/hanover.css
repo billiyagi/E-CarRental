@@ -1,0 +1,13 @@
+body {
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+.logo-hanover {
+	width: 140px;
+}
+
+@media (max-width: 768px) {
+	.logo-hanover {
+		width: 100px;
+	}
+}
