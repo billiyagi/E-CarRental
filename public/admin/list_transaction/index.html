@@ -244,8 +244,11 @@
 	<li class="breadcrumb-item">
 		<a href="#">Home</a>
 	</li>
+	<li class="breadcrumb-item">
+		<a href="#">Transaksi</a>
+	</li>
 	<li class="breadcrumb-item active">
-		Mekanik
+		Daftar Transaksi
 	</li>
 
 						</ol>
@@ -256,23 +259,155 @@
 
 		<section class="content">
 			 
-	<!-- isi konten disini --> 
+	<div class="row">
+		<div class="col-12">
+			<div class="card">
+			<div class="card-header">
+				<div class="row justify-content-end">
+					<div class="col-md-3">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+							<div class="input-group-append">
+								<span class="input-group-text" id="basic-addon1">
+									<i class="fa fa-search"></i>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="table-responsive">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+							<th style="width: 10px">No</th>
+							<th>Tanggal</th>
+							<th>Pelanggan</th>
+							<th>Nopol</th>
+							<th>Kategori</th>
+							<th>Keluhan</th>
+							<th>Layanan</th>
+							<th style="width: 40px">Aksi</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>09 Feb 2022</td>
+								<td>Hasan Basri</td>
+								<td>FBA718C</td>
+								<td>Minibus</td>
+								<td>-</td>
+								<td>Sewa Mobil</td>
+								<td>
+									<div class="d-flex justify-content-between">
+										<button class="btn btn-warning text-white">
+											<i class="fas fa-eye"></i>
+										</button>
+										<button class="btn btn-primary mx-3">
+											<i class="fas fa-edit"></i>
+										</button>
+										<button class="btn btn-danger">
+											<i class="fas fa-times-circle"></i>
+										</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>25 Jun 2022</td>
+								<td>Muhamad Nuruzzaki</td>
+								<td>B4981AC</td>
+								<td>Sedan</td>
+								<td>Ban Kurang Angin</td>
+								<td>Sewa Mobil</td>
+								<td>
+									<div class="d-flex justify-content-between">
+										<button class="btn btn-warning text-white">
+											<i class="fas fa-eye"></i>
+										</button>
+										<button class="btn btn-primary mx-3">
+											<i class="fas fa-edit"></i>
+										</button>
+										<button class="btn btn-danger">
+											<i class="fas fa-times-circle"></i>
+										</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>15 Nov 2021</td>
+								<td>Agung Ardiansyah</td>
+								<td>GA77FA</td>
+								<td>Sedan</td>
+								<td>Kaca Film Kurang Tebal</td>
+								<td>Jual/beli mobil</td>
+								<td>
+									<div class="d-flex justify-content-between">
+										<button class="btn btn-warning text-white">
+											<i class="fas fa-eye"></i>
+										</button>
+										<button class="btn btn-primary mx-3">
+											<i class="fas fa-edit"></i>
+										</button>
+										<button class="btn btn-danger">
+											<i class="fas fa-times-circle"></i>
+										</button>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="card-footer clearfix">
+				<div class="d-flex justify-content-between align-items-center">
+					<button class="btn btn-primary">Tambah data</button>
+					<ul class="pagination pagination-sm m-0 float-right">
+						<li class="page-item"><a class="page-link" href="#">«</a></li>
+						<li class="page-item"><a class="page-link" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">»</a></li>
+					</ul>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
 
 		</section>
 	</div>
 			<footer class="main-footer">
 			<div class="float-right d-none d-sm-block">
-				<b>Version</b> 3.2.0
+				<b>Version</b> 1.0.2
 			</div>
 			<strong
-				>Copyright &copy; 2014-2021
-				<a href="https://adminlte.io">AdminLTE.io</a>.</strong
+				>Copyright &copy; 2022-2023
+				<a href="https://adminlte.io">Mahasiswa STT-NF</a>.</strong
 			>
 			All rights reserved.
 		</footer>
 
 		<aside class="control-sidebar control-sidebar-dark"></aside>
 	</div>
+
+<!-- Login warning -->
+<div class="modal fade" id="failLoginModal" tabindex="-1" data-backdrop="static" aria-labelledby="failLoginModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+		<div class="modal-body">
+			<p>Oops, login terlebih dahulu untuk mengakses halaman ini</p>
+			<div class="d-flex justify-content-end">
+				<a href="/index.html" class="btn btn-secondary">Kembali</a>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
 
 	<!-- Library Plugins -->
 	<script src="/plugins/jquery/jquery.min.js"></script>
@@ -290,6 +425,7 @@
 	<script src="/plugins/summernote/summernote-bs4.min.js"></script>
 	<script src="/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 	<script src="/assets/js/adminlte.min.js?v=3.2.0"></script>
+	<script src="/assets/js/admin.js"></script>
 </body>
 </html>
  
@@ -298,6 +434,4 @@
  
 
 <!-- Beadcumb -->
-
-
 <!-- Konten -->
