@@ -11,23 +11,34 @@
 
 <!-- isi konten disini -->
 <div class="vh-100 d-flex justify-content-center align-items-center">
-
-  <div class="login-box">
-    <div class="card border-0 shadow-none">
-      <img src="/assets/img/logo/Hanover-login-banner.png" alt="">
-      <div class="card-body login-card-body">
-        <form action="/admin/mechanics" method="post">
-          <input type="username" class="form-control mb-3" placeholder="Username">
-          <input type="password" class="form-control mb-3" placeholder="Password">
-          <button type="submit" class="btn btn-primary btn-block shadow-sm">Log in</button>
-      </div>
-      </form>
-      <p class="mb-1 text-center">
-        Tidak punya akun? <a href="/signup">daftar disini</a>
-      </p>
-    </div>
-  </div>
-</div>
+	<div class="login-box">
+		<div class="card border-0 shadow-none">
+			<img src="/assets/img/logo/Hanover-login-banner.png" alt="" />
+			<form action="/admin/mechanics" method="post">
+				<div class="card-body login-card-body">
+					<input
+						type="username"
+						class="form-control mb-3"
+						placeholder="Username"
+					/>
+					<input
+						type="password"
+						class="form-control mb-3"
+						placeholder="Password"
+					/>
+					<button
+						type="submit"
+						class="btn btn-primary btn-block shadow-sm"
+					>
+						Log in
+					</button>
+				</div>
+			</form>
+			<p class="mb-1 text-center">
+				Tidak punya akun? <a href="/signup">daftar disini</a>
+			</p>
+		</div>
+	</div>
 </div>
 
 @endsection
