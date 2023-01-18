@@ -57,7 +57,9 @@
 
 	<body>
 		@import(base/header)
-		<div class="fluid-container p-md-5 px-3 pt-5">@attach(content)</div>
+		<div class="fluid-container p-md-5 px-3 pt-5 position-relative">
+			@attach(content)
+		</div>
 		@import(base/footer)
 		<!-- Library Plugins -->
 		<script src="/plugins/jquery/jquery.min.js"></script>
@@ -65,5 +67,8 @@
 		<script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 		<script src="/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 		<script src="/assets/js/adminlte.min.js?v=3.2.0"></script>
+
+		<!-- Primary JavaScript -->
+		<script src="/assets/js/hanover.js"></script>
 	</body>
 </html>
