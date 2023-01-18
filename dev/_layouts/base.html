@@ -1,56 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Primary Meta Tags -->
+		<meta name="title" content="Hanover - @attach(title)" />
+		<meta
+			name="description"
+			content="Tugas project mata kuliah pemrograman web dengan tema bisnis, dengan ilustrasi merk Hanover. Kelompok kami yang terdiri dari 4 orang yaitu: Febry Billiyagi, Ammar Asysyakur, Hany hidianti, Cherry Renata"
+		/>
 
-	<!-- Primary Meta Tags -->
-	<meta name="title" content="Hanover - @attach(title)">
-	<meta name="description" content="Tugas project mata kuliah pemrograman web dengan tema bisnis, dengan ilustrasi merk Hanover. Kelompok kami yang terdiri dari 4 orang yaitu: Febry Billiyagi, Ammar Asysyakur, Hany hidianti, Cherry Renata">
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://metatags.io/" />
+		<meta property="og:title" content="Hanover - Rental Car" />
+		<meta
+			property="og:description"
+			content="Tugas project mata kuliah pemrograman web dengan tema bisnis, dengan ilustrasi merk Hanover. Kelompok kami yang terdiri dari 4 orang yaitu: Febry Billiyagi, Ammar Asysyakur, Hany hidianti, Cherry Renata"
+		/>
+		<meta property="og:image" content="/assets/img/TI02.jpg" />
 
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://metatags.io/">
-	<meta property="og:title" content="Hanover - Rental Car">
-	<meta property="og:description" content="Tugas project mata kuliah pemrograman web dengan tema bisnis, dengan ilustrasi merk Hanover. Kelompok kami yang terdiri dari 4 orang yaitu: Febry Billiyagi, Ammar Asysyakur, Hany hidianti, Cherry Renata">
-	<meta property="og:image" content="/assets/img/TI02.jpg">
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://metatags.io/" />
+		<meta property="twitter:title" content="Hanover - Rental Car" />
+		<meta
+			property="twitter:description"
+			content="Tugas project mata kuliah pemrograman web dengan tema bisnis, dengan ilustrasi merk Hanover. Kelompok kami yang terdiri dari 4 orang yaitu: Febry Billiyagi, Ammar Asysyakur, Hany hidianti, Cherry Renata"
+		/>
+		<meta property="twitter:image" content="/assets/img/TI02.jpg" />
 
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:url" content="https://metatags.io/">
-	<meta property="twitter:title" content="Hanover - Rental Car">
-	<meta property="twitter:description" content="Tugas project mata kuliah pemrograman web dengan tema bisnis, dengan ilustrasi merk Hanover. Kelompok kami yang terdiri dari 4 orang yaitu: Febry Billiyagi, Ammar Asysyakur, Hany hidianti, Cherry Renata">
-	<meta property="twitter:image" content="/assets/img/TI02.jpg">
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
 
-	<!-- Google Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+		<!-- Fontawesome Icons -->
+		<link
+			rel="stylesheet"
+			href="/plugins/fontawesome-free/css/all.min.css"
+		/>
 
-	<!-- Fontawesome Icons -->
-	<link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
+		<!-- Admin LTE Style -->
+		<link rel="stylesheet" href="/assets/css/adminlte.min.css?v=3.2.0" />
 
-	<!-- Admin LTE Style -->
-	<link rel="stylesheet" href="/assets/css/adminlte.min.css?v=3.2.0">
+		<!-- Hanover Style -->
+		<link rel="stylesheet" href="/assets/css/hanover.css" />
 
-	<!-- Hanover Style -->
-	<link rel="stylesheet" href="/assets/css/hanover.css">
+		<title>Hanover - @attach(title)</title>
+	</head>
 
-	<title>Hanover - @attach(title)</title>
-</head>
-
-<body> 
-	@import(base/header)
-	<div class="fluid-container p-5">
-		@attach(content) 
-	</div>
-	@import(base/footer)
-	<!-- Library Plugins -->
-	<script src="/plugins/jquery/jquery.min.js"></script>
-	<script src="/plugins/jquery-ui/jquery-ui.min.js"></script>
-	<script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-	<script src="/assets/js/adminlte.min.js?v=3.2.0"></script>
-</body>
-
+	<body>
+		@import(base/header)
+		<div class="fluid-container p-md-5 px-3 pt-5">@attach(content)</div>
+		@import(base/footer)
+		<!-- Library Plugins -->
+		<script src="/plugins/jquery/jquery.min.js"></script>
+		<script src="/plugins/jquery-ui/jquery-ui.min.js"></script>
+		<script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+		<script src="/assets/js/adminlte.min.js?v=3.2.0"></script>
+	</body>
 </html>
