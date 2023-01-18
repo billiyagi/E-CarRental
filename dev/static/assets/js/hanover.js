@@ -54,6 +54,9 @@ $(document).ready(function () {
 							);
 							localStorage.setItem("name", userFinded.name);
 
+							// Tampilkan animasi tombol loading
+							loadingButton("#btnLoginHanover");
+
 							// Alihkan pengguna ke halaman admin
 							setTimeout(function () {
 								window.location.href = "/admin/mechanics/";
@@ -71,6 +74,7 @@ $(document).ready(function () {
 		});
 });
 
+// Menampilkan feedback
 const showAlert = function (type, message) {
 	$("#getAlert")
 		.html(`<div class="alert alert-${type} alert-dismissible fade show" role="alert">${message}.
@@ -80,6 +84,7 @@ const showAlert = function (type, message) {
 				</div>`);
 };
 
+// Menampilkan animasi tombol loading
 const loadingButton = function (btn) {
 	$(btn).attr("disabled", "");
 	$("#loadingSpinner").show();
