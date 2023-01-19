@@ -1,49 +1,65 @@
 <!-- Halaman Login (Hany) -->
 
-<!-- Template --> 
+<!-- Template -->
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Primary Meta Tags -->
+		<meta name="title" content="Hanover - ini adalah halaman" />
+		<meta
+			name="description"
+			content="Tugas project mata kuliah pemrograman web dengan tema bisnis, dengan ilustrasi merk Hanover. Kelompok kami yang terdiri dari 4 orang yaitu: Febry Billiyagi, Ammar Asysyakur, Hany hidianti, Cherry Renata"
+		/>
 
-	<!-- Primary Meta Tags -->
-	<meta name="title" content="Hanover - ini adalah halaman">
-	<meta name="description" content="Tugas project mata kuliah pemrograman web dengan tema bisnis, dengan ilustrasi merk Hanover. Kelompok kami yang terdiri dari 4 orang yaitu: Febry Billiyagi, Ammar Asysyakur, Hany hidianti, Cherry Renata">
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://metatags.io/" />
+		<meta property="og:title" content="Hanover - Rental Car" />
+		<meta
+			property="og:description"
+			content="Tugas project mata kuliah pemrograman web dengan tema bisnis, dengan ilustrasi merk Hanover. Kelompok kami yang terdiri dari 4 orang yaitu: Febry Billiyagi, Ammar Asysyakur, Hany hidianti, Cherry Renata"
+		/>
+		<meta property="og:image" content="/assets/img/TI02.jpg" />
 
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://metatags.io/">
-	<meta property="og:title" content="Hanover - Rental Car">
-	<meta property="og:description" content="Tugas project mata kuliah pemrograman web dengan tema bisnis, dengan ilustrasi merk Hanover. Kelompok kami yang terdiri dari 4 orang yaitu: Febry Billiyagi, Ammar Asysyakur, Hany hidianti, Cherry Renata">
-	<meta property="og:image" content="/assets/img/TI02.jpg">
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://metatags.io/" />
+		<meta property="twitter:title" content="Hanover - Rental Car" />
+		<meta
+			property="twitter:description"
+			content="Tugas project mata kuliah pemrograman web dengan tema bisnis, dengan ilustrasi merk Hanover. Kelompok kami yang terdiri dari 4 orang yaitu: Febry Billiyagi, Ammar Asysyakur, Hany hidianti, Cherry Renata"
+		/>
+		<meta property="twitter:image" content="/assets/img/TI02.jpg" />
 
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:url" content="https://metatags.io/">
-	<meta property="twitter:title" content="Hanover - Rental Car">
-	<meta property="twitter:description" content="Tugas project mata kuliah pemrograman web dengan tema bisnis, dengan ilustrasi merk Hanover. Kelompok kami yang terdiri dari 4 orang yaitu: Febry Billiyagi, Ammar Asysyakur, Hany hidianti, Cherry Renata">
-	<meta property="twitter:image" content="/assets/img/TI02.jpg">
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
 
-	<!-- Google Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+		<!-- Fontawesome Icons -->
+		<link
+			rel="stylesheet"
+			href="/plugins/fontawesome-free/css/all.min.css"
+		/>
 
-	<!-- Fontawesome Icons -->
-	<link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
+		<!-- Admin LTE Style -->
+		<link rel="stylesheet" href="/assets/css/adminlte.min.css?v=3.2.0" />
 
-	<!-- Admin LTE Style -->
-	<link rel="stylesheet" href="/assets/css/adminlte.min.css?v=3.2.0">
+		<!-- Hanover Style -->
+		<link rel="stylesheet" href="/assets/css/hanover.css" />
 
-	<!-- Hanover Style -->
-	<link rel="stylesheet" href="/assets/css/hanover.css">
+		<title>Hanover - ini adalah halaman</title>
+	</head>
 
-	<title>Hanover - ini adalah halaman</title>
-</head>
-
-<body> 
-	<header class="container-fluid px-md-5 px-3 shadow-sm my-0">
+	<body>
+		<header class="container-fluid px-md-5 px-3 shadow-sm my-0">
 	<nav class="navbar navbar-expand-md d-flex justify-content-between navbar-light bg-white p-1">
 		<a class="navbar-brand" href="#">
 			<img src="/assets/img/logo/dark/hanover-dark-1.png" alt="Logo Hanover" class="logo-hanover">
@@ -109,27 +125,87 @@
 		</div>
 	</div>
 </div>
-	<div class="fluid-container p-5">
-		 
+		<div class="fluid-container p-md-5 px-3 pt-5 position-relative">
+			
 
-<!-- isi konten disini --> 
-<h1>Login</h1>
- 
+<!-- isi konten disini -->
+<div class="vh-100 d-flex justify-content-center align-items-center">
+	<div class="login-box">
+		<div class="card border-0 shadow-none">
+			<div id="getAlert"></div>
+			<img src="/assets/img/logo/Hanover-login-banner.png" alt="" />
+			<form action="#" id="formLoginHanover">
+				<div class="card-body login-card-body">
+					<div class="mb-3">
+						<input
+							type="text"
+							class="form-control"
+							placeholder="Username"
+							id="usernameLoginHanover"
+						/>
+						<div
+							id="usernameLoginHanoverFeedback"
+							class="invalid-feedback"
+						>
+							Username belum di isi
+						</div>
+					</div>
+					<div class="mb-3">
+						<input
+							type="password"
+							class="form-control"
+							placeholder="Password"
+							id="passwordLoginHanover"
+						/>
+						<div
+							id="passwordLoginHanoverFeedback"
+							class="invalid-feedback"
+						>
+							Password belum di isi
+						</div>
+					</div>
+					<button
+						type="submit"
+						class="btn btn-primary btn-block shadow-sm"
+						id="btnLoginHanover"
+					>
+						Log in
+						<span
+							class="spinner-border spinner-border-sm"
+							role="status"
+							aria-hidden="true"
+							style="display: none"
+							id="loadingSpinner"
+						></span>
+					</button>
+				</div>
+			</form>
+			<p class="mb-1 text-center">
+				Tidak punya akun? <a href="/signup">daftar disini</a>
+			</p>
+		</div>
 	</div>
-	<footer class="bg-dark py-4">
+</div>
+
+
+		</div>
+		<footer class="bg-dark py-4">
 	<p class="m-0 text-center">Website by Mahasiswa STT-NF &copy;copyright 2022</p>
 </footer>
-	<!-- Library Plugins -->
-	<script src="/plugins/jquery/jquery.min.js"></script>
-	<script src="/plugins/jquery-ui/jquery-ui.min.js"></script>
-	<script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-	<script src="/assets/js/adminlte.min.js?v=3.2.0"></script>
-</body>
+		<!-- Library Plugins -->
+		<script src="/plugins/jquery/jquery.min.js"></script>
+		<script src="/plugins/jquery-ui/jquery-ui.min.js"></script>
+		<script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+		<script src="/assets/js/adminlte.min.js?v=3.2.0"></script>
 
-</html> 
+		<!-- Primary JavaScript -->
+		<script src="/assets/js/hanover.js"></script>
+	</body>
+</html>
 
-<!-- Bagian isi Title --> 
- 
+
+<!-- Bagian isi Title -->
+
 
 <!-- Konten -->

@@ -1,14 +1,71 @@
 <!-- Halaman Login (Hany) -->
 
-<!-- Template --> 
-@layout(base) 
+<!-- Template -->
+@layout(base)
 
-<!-- Bagian isi Title --> 
-@section(title, ini adalah halaman) 
+<!-- Bagian isi Title -->
+@section(title, ini adalah halaman)
 
 <!-- Konten -->
-@section(content) 
+@section(content)
 
-<!-- isi konten disini --> 
-<h1>Login</h1>
+<!-- isi konten disini -->
+<div class="vh-100 d-flex justify-content-center align-items-center">
+	<div class="login-box">
+		<div class="card border-0 shadow-none">
+			<div id="getAlert"></div>
+			<img src="/assets/img/logo/Hanover-login-banner.png" alt="" />
+			<form action="#" id="formLoginHanover">
+				<div class="card-body login-card-body">
+					<div class="mb-3">
+						<input
+							type="text"
+							class="form-control"
+							placeholder="Username"
+							id="usernameLoginHanover"
+						/>
+						<div
+							id="usernameLoginHanoverFeedback"
+							class="invalid-feedback"
+						>
+							Username belum di isi
+						</div>
+					</div>
+					<div class="mb-3">
+						<input
+							type="password"
+							class="form-control"
+							placeholder="Password"
+							id="passwordLoginHanover"
+						/>
+						<div
+							id="passwordLoginHanoverFeedback"
+							class="invalid-feedback"
+						>
+							Password belum di isi
+						</div>
+					</div>
+					<button
+						type="submit"
+						class="btn btn-primary btn-block shadow-sm"
+						id="btnLoginHanover"
+					>
+						Log in
+						<span
+							class="spinner-border spinner-border-sm"
+							role="status"
+							aria-hidden="true"
+							style="display: none"
+							id="loadingSpinner"
+						></span>
+					</button>
+				</div>
+			</form>
+			<p class="mb-1 text-center">
+				Tidak punya akun? <a href="/signup">daftar disini</a>
+			</p>
+		</div>
+	</div>
+</div>
+
 @endsection
