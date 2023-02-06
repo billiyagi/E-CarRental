@@ -8,7 +8,7 @@ layanan rental mobil pertama di Indonesia yang berstandar international, dengan 
 - Bootstrap 4
 - JQuery
 - Admin LTE
-
+- Mini-SSG
 
 ## Web Design
 
